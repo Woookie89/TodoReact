@@ -1,4 +1,4 @@
-import './App.scss';
+import './styles/index.css';
 import {useEffect, useState} from "react";
 
 import {collection,  doc, writeBatch, onSnapshot} from "firebase/firestore";

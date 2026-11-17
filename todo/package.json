@@ -12,31 +12,24 @@
     ]
   },
   "dependencies": {
-    "@testing-library/jest-dom": "^7.0.0",
-    "@testing-library/react": "^16.3.2",
-    "@testing-library/user-event": "^14.6.3",
-    "firebase": "^12.17.1",
-    "react": "^19.2.8",
-    "react-dom": "^19.2.8",
-    "react-scripts": "^0.0.0",
-    "web-vitals": "^6.1.0"
+    "firebase": "^13.4.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "web-vitals": "^6.2.3"
   },
   "devDependencies": {
-    "sass": "^1.102.0"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+    "@rsbuild/core": "^2.3.3",
+    "@rsbuild/plugin-react": "^2.1.1"
   },
   "name": "todo",
   "private": true,
   "scripts": {
-    "build": "react-scripts build",
-    "eject": "react-scripts eject",
-    "start": "react-scripts start",
-    "test": "react-scripts test"
+    "start": "rsbuild dev",
+    "build": "rsbuild build",
+    "preview": "rsbuild preview"
   },
-  "version": "0.1.0"
+  "version": "0.1.0",
+  "overrides": {
+    "@grpc/grpc-js": "^1.14.7"
+  }
 }
